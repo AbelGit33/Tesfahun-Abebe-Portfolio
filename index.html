@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tesfahun Abebe | Software Engineering Student &amp; Web Developer</title>
+<meta name="description" content="Meet Tesfahun Abebe, a software engineering student and web developer building useful digital products in Ethiopia. Explore projects and try the live EthioExamHub Telegram bot.">
+<meta property="og:title" content="Tesfahun Abebe | Software Engineering Student">
+<meta property="og:description" content="Software engineering student and web developer building useful digital products in Ethiopia. Explore projects and try the live EthioExamHub Telegram bot.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0B7A4B">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Tesfahun Abebe",
+  "jobTitle": "Software Engineering Student and Web Developer",
+  "description": "Software Engineering student at Injibara University, building web apps and digital products in Ethiopia.",
+  "email": "mailto:t3267270@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Injibara",
+    "addressRegion": "Amhara",
+    "addressCountry": "ET"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Injibara University"
+  },
+  "sameAs": [
+    "https://github.com/AbelGit33",
+    "https://www.youtube.com/@abel-k3",
+    "https://www.linkedin.com/in/tesfahun-abebe-3a2928395",
+    "https://t.me/+251970862975"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Page reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="Tesfahun Abebe, home"><i>TA</i>Tesfahun</a>
+    <nav id="nav" aria-label="Main"><ul id="navlinks"></ul></nav>
+    <a class="btn s cv" id="cv" href="#" hidden>Download CV</a>
+    <button class="btn s ic" id="theme" aria-label="Switch color theme">☾</button>
+    <button class="btn s ic" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main id="main">
+<section class="hero" id="home"><div class="wrap">
+  <div class="load">
+    <p class="hi">SOFTWARE ENGINEERING · ETHIOPIA</p>
+    <h1>Tesfahun Abebe.</h1>
+    <div class="flag" aria-hidden="true"><b></b><b></b><b></b></div>
+    <p class="sub" id="tagline"></p>
+    <a class="hero-bot" href="https://t.me/Entrance00_bot" target="_blank" rel="noopener">
+      <span class="bot-mark" aria-hidden="true">↗</span>
+      <span><strong>EthioExamHub is live</strong><small>Explore the exam-prep bot on Telegram</small></span>
+      <span class="bot-arrow" aria-hidden="true">↗</span>
+    </a>
+    <p class="role" id="role" aria-live="off"></p>
+    <div class="cta"><a class="btn p" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="btn" href="#contact">Let’s talk</a><a class="btn" id="cv2" href="#" hidden>Download CV</a></div>
+    <div class="soc" id="social"></div>
+  </div>
+  <div class="photo load" id="photo" style="animation-delay:.15s"><div><strong>TA</strong>[Add your photo: set CONFIG.photo to an image link]</div></div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div><h2>About me</h2><div id="aboutText"></div></div>
+  <div><dl id="facts"></dl><div class="now" id="now"></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2><div id="skillList"></div></div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects</h2>
+  <div class="project-tools">
+    <label class="project-search" for="projectSearch">Search projects
+      <input id="projectSearch" type="search" placeholder="Try a project name or technology" autocomplete="off" aria-controls="grid">
+    </label>
+    <p class="project-count" id="projectCount" role="status" aria-live="polite"></p>
+  </div>
+  <div class="tabs" role="group" aria-label="Filter projects" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+  <p class="project-empty" id="projectEmpty" hidden>No projects match your search. Try another keyword or category.</p>
+</div></section>
+
+<section id="education"><div class="wrap"><h2>Education &amp; experience</h2>
+  <ul class="tl" id="timeline"></ul>
+  <h3 style="margin-top:28px">Certification</h3>
+  <div class="cert" id="ach"></div>
+</div></section>
+
+<section id="contact"><div class="wrap ct">
+  <div><h2>Let’s build something together</h2>
+    <p>Looking for an intern, a junior developer, or a freelancer? Send me a message and I’ll reply soon.</p>
+    <form id="form" novalidate>
+      <label>Name<input id="fn" autocomplete="name"><span class="err" id="en"></span></label>
+      <label>Email<input id="fe" type="email" autocomplete="email"><span class="err" id="ee"></span></label>
+      <label>Message<textarea id="fm"></textarea><span class="err" id="em"></span></label>
+      <button class="btn p" type="submit">Send message</button>
+      <div class="ok" id="ok" role="status" hidden></div>
+    </form>
+  </div>
+  <div><h2 style="visibility:hidden" aria-hidden="true">.</h2><ul class="links" id="links"></ul></div>
+</div></section>
+</main>
+<div class="tri"></div>
+<footer><div class="wrap">
+  <span id="copy"></span>
+  <nav aria-label="Footer"><ul id="footlinks"></ul></nav>
+  <a class="btn s" href="#home">Back to top</a>
+</div></footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
