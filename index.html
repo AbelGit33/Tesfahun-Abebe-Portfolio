@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tesfahun Abebe | Software Engineering Student &amp; Web Developer</title>
-<meta name="description" content="Meet Tesfahun Abebe, a software engineering student and web developer building useful digital products in Ethiopia. Explore projects and try the live EthioExamHub Telegram bot.">
+<meta name="description" content="Meet Tesfahun Abebe, a software engineering student and web developer building useful digital products in Ethiopia.">
 <meta property="og:title" content="Tesfahun Abebe | Software Engineering Student">
-<meta property="og:description" content="Software engineering student and web developer building useful digital products in Ethiopia. Explore projects and try the live EthioExamHub Telegram bot.">
+<meta property="og:description" content="Software engineering student and web developer building useful digital products in Ethiopia.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#0B7A4B">
+<meta name="theme-color" content="#f6f7fb">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -19,16 +19,8 @@
   "jobTitle": "Software Engineering Student and Web Developer",
   "description": "Software Engineering student at Injibara University, building web apps and digital products in Ethiopia.",
   "email": "mailto:t3267270@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Injibara",
-    "addressRegion": "Amhara",
-    "addressCountry": "ET"
-  },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Injibara University"
-  },
+  "address": {"@type": "PostalAddress", "addressLocality": "Injibara", "addressRegion": "Amhara", "addressCountry": "ET"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Injibara University"},
   "sameAs": [
     "https://github.com/AbelGit33",
     "https://www.youtube.com/@abel-k3",
@@ -41,13 +33,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="redesign.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="Page reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#home" aria-label="Tesfahun Abebe, home"><i>TA</i>Tesfahun</a>
+    <a class="logo" href="#home" aria-label="Tesfahun Abebe, home"><i>TA</i>Tesfahun<span class="logo-dot">.</span></a>
     <nav id="nav" aria-label="Main"><ul id="navlinks"></ul></nav>
     <a class="btn s cv" id="cv" href="#" hidden>Download CV</a>
     <button class="btn s ic" id="theme" aria-label="Switch color theme">☾</button>
@@ -56,9 +49,9 @@
 </header>
 <main id="main">
 <section class="hero" id="home"><div class="wrap">
-  <div class="load">
-    <p class="hi">SOFTWARE ENGINEERING · ETHIOPIA</p>
-    <h1>Tesfahun Abebe.</h1>
+  <div class="load hero-copy">
+    <p class="hi"><span class="status-dot"></span> SOFTWARE ENGINEERING · ETHIOPIA</p>
+    <h1>Building useful things for a <span>better connected</span> world.</h1>
     <div class="flag" aria-hidden="true"><b></b><b></b><b></b></div>
     <p class="sub" id="tagline"></p>
     <a class="hero-bot" href="https://t.me/Entrance00_bot" target="_blank" rel="noopener">
@@ -67,60 +60,29 @@
       <span class="bot-arrow" aria-hidden="true">↗</span>
     </a>
     <p class="role" id="role" aria-live="off"></p>
-    <div class="cta"><a class="btn p" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="btn" href="#contact">Let’s talk</a><a class="btn" id="cv2" href="#" hidden>Download CV</a></div>
+    <div class="cta"><a class="btn p" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="btn" href="#contact">Let’s talk</a><a class="btn cv2" id="cv2" href="#" hidden>Download CV</a></div>
     <div class="soc" id="social"></div>
   </div>
-  <div class="photo load" id="photo" style="animation-delay:.15s"><div><strong>TA</strong>[Add your photo: set CONFIG.photo to an image link]</div></div>
+  <div class="hero-visual load" style="animation-delay:.15s"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="photo" id="photo"><div><strong>TA</strong>[Add your photo: set CONFIG.photo to an image link]</div></div><div class="float-card"><span class="float-icon">✳</span><span><b>Curious by nature</b><small>Building, learning, sharing</small></span></div><span class="visual-caption">INJIBARA, ETHIOPIA <span>↗</span></span></div>
 </div></section>
-
 <section id="about"><div class="wrap about">
-  <div><h2>About me</h2><div id="aboutText"></div></div>
-  <div><dl id="facts"></dl><div class="now" id="now"></div></div>
+  <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Turning ideas into <span class="accent-text">real experiences.</span></h2><div id="aboutText"></div></div>
+  <div class="about-aside"><dl id="facts"></dl><div class="now" id="now"></div></div>
 </div></section>
-
-<section id="skills"><div class="wrap"><h2>Skills</h2><div id="skillList"></div></div></section>
-
-<section id="projects"><div class="wrap"><h2>Projects</h2>
-  <div class="project-tools">
-    <label class="project-search" for="projectSearch">Search projects
-      <input id="projectSearch" type="search" placeholder="Try a project name or technology" autocomplete="off" aria-controls="grid">
-    </label>
-    <p class="project-count" id="projectCount" role="status" aria-live="polite"></p>
-  </div>
-  <div class="tabs" role="group" aria-label="Filter projects" id="tabs"></div>
-  <div class="grid" id="grid"></div>
-  <p class="project-empty" id="projectEmpty" hidden>No projects match your search. Try another keyword or category.</p>
+<section id="skills"><div class="wrap"><p class="eyebrow">WHAT I WORK WITH</p><h2>Skills &amp; tools</h2><p class="section-intro">A growing toolkit for designing, building, and shipping useful digital products.</p><div id="skillList"></div></div></section>
+<section id="projects"><div class="wrap"><p class="eyebrow">SELECTED WORK</p><h2>Projects with a purpose.</h2><p class="section-intro">A selection of ideas I’ve taken from concept to something people can use.</p>
+  <div class="project-tools"><label class="project-search" for="projectSearch">Search projects<input id="projectSearch" type="search" placeholder="Try a project name or technology" autocomplete="off" aria-controls="grid"></label><p class="project-count" id="projectCount" role="status" aria-live="polite"></p></div>
+  <div class="tabs" role="group" aria-label="Filter projects" id="tabs"></div><div class="grid" id="grid"></div><p class="project-empty" id="projectEmpty" hidden>No projects match your search. Try another keyword or category.</p>
 </div></section>
-
-<section id="education"><div class="wrap"><h2>Education &amp; experience</h2>
-  <ul class="tl" id="timeline"></ul>
-  <h3 style="margin-top:28px">Certification</h3>
-  <div class="cert" id="ach"></div>
-</div></section>
-
+<section id="education"><div class="wrap"><p class="eyebrow">THE JOURNEY SO FAR</p><h2>Education &amp; experience</h2><ul class="tl" id="timeline"></ul><h3 class="cert-heading">Certification</h3><div class="cert" id="ach"></div></div></section>
 <section id="contact"><div class="wrap ct">
-  <div><h2>Let’s build something together</h2>
-    <p>Looking for an intern, a junior developer, or a freelancer? Send me a message and I’ll reply soon.</p>
-    <form id="form" novalidate>
-      <label>Name<input id="fn" autocomplete="name"><span class="err" id="en"></span></label>
-      <label>Email<input id="fe" type="email" autocomplete="email"><span class="err" id="ee"></span></label>
-      <label>Message<textarea id="fm"></textarea><span class="err" id="em"></span></label>
-      <button class="btn p" type="submit">Send message</button>
-      <div class="ok" id="ok" role="status" hidden></div>
-    </form>
-  </div>
-  <div><h2 style="visibility:hidden" aria-hidden="true">.</h2><ul class="links" id="links"></ul></div>
+  <div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s make something <span class="accent-text">meaningful.</span></h2><p>Looking for an intern, a junior developer, or a freelancer? Send me a message and I’ll reply soon.</p>
+    <form id="form" novalidate><label>Name<input id="fn" autocomplete="name"><span class="err" id="en"></span></label><label>Email<input id="fe" type="email" autocomplete="email"><span class="err" id="ee"></span></label><label>Message<textarea id="fm"></textarea><span class="err" id="em"></span></label><button class="btn p" type="submit">Send message <span aria-hidden="true">↗</span></button><div class="ok" id="ok" role="status" hidden></div></form>
+  </div><div class="contact-aside"><div class="contact-note"><span class="contact-spark">✳</span><h3>Good things start with a conversation.</h3><p>Have an opportunity, a question, or an idea to explore? I’d love to hear from you.</p></div><h3 class="connect-heading">Find me online</h3><ul class="links" id="links"></ul></div>
 </div></section>
 </main>
 <div class="tri"></div>
-<footer><div class="wrap">
-  <span id="copy"></span>
-  <nav aria-label="Footer"><ul id="footlinks"></ul></nav>
-  <a class="btn s" href="#home">Back to top</a>
-</div></footer>
-
-
-
+<footer><div class="wrap"><span id="copy"></span><nav aria-label="Footer"><ul id="footlinks"></ul></nav><a class="btn s" href="#home">Back to top ↑</a></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
