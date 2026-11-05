@@ -1,14 +1,15 @@
 <div align="center">
 
 # Tesfahun Abebe
+
 ### Software Engineering Student · Web Developer · Ethiopia
 
 **Building useful things for a better-connected world.**
 
-[![Visit the portfolio](https://img.shields.io/badge/Visit%20Portfolio-Explore%20my%20work-635bff?style=for-the-badge)](https://tesfahunabebe-portfolio.vercel.app)
-[![Department Selection Guide](https://img.shields.io/badge/Department%20Selection%20Guide-Open%20the%20guide-0f766e?style=for-the-badge)](https://dept-selection-guide.vercel.app/)
+[![Explore the portfolio](https://img.shields.io/badge/Explore%20the%20Portfolio-147d58?style=for-the-badge)](https://tesfahunabebe-portfolio.vercel.app)
+[![Open the Department Selection Guide](https://img.shields.io/badge/🎓%20Department%20Selection%20Guide-0f766e?style=for-the-badge)](https://dept-selection-guide.vercel.app/)
 
-[About](#about) · [Featured project](#featured-project) · [Technology](#technology) · [Run locally](#run-locally) · [Connect](#connect)
+[About](#about) · [Featured project](#featured-project) · [Portfolio highlights](#portfolio-highlights) · [Run locally](#run-locally) · [Connect](#connect)
 
 </div>
 
@@ -16,36 +17,32 @@
 
 ## About
 
-Welcome! I’m **Tesfahun Abebe**, a Software Engineering student at **Injibara University** in Ethiopia. I enjoy turning ideas into practical digital experiences and building projects that are useful to real people.
+Hi, I’m **Tesfahun Abebe**, a Software Engineering student at **Injibara University** in Ethiopia. I love turning ideas into practical digital experiences and building useful products for people.
 
-This repository contains my personal portfolio: a responsive, single-page website featuring an introduction, skills, selected projects, education and experience, and ways to get in touch.
+This repository is my personal portfolio: a responsive, single-page website introducing me, showcasing selected work and skills, and making it easy to get in touch.
 
 ## Featured project
 
 ### Department Selection Guide
 
-Choosing a field of study is an important decision. Visit the guide to explore the live project:
+Explore the Department Selection Guide using the button above or this direct link:
 
-<div align="center">
+**[🎓 Open the Department Selection Guide](https://dept-selection-guide.vercel.app/)**
 
-[![Open the Department Selection Guide](https://img.shields.io/badge/🎓%20Open%20Department%20Selection%20Guide-dept--selection--guide.vercel.app-0f766e?style=for-the-badge)](https://dept-selection-guide.vercel.app/)
+> **Availability:** I checked the supplied URL while preparing this README. It appeared to lead to a Vercel login page rather than a publicly accessible guide. The link is included as requested; if visitors cannot open it, check the Vercel deployment’s access protection and status.
 
-</div>
+## Portfolio highlights
 
-> **Availability note:** The supplied URL was checked while preparing this README, but it appeared to lead to a Vercel login rather than a publicly accessible guide. If that is unexpected, check the Vercel deployment’s access protection and deployment status.
-
-## What’s in the portfolio
-
-- **About** — a personal introduction and background.
-- **Skills & tools** — a snapshot of the technologies and tools I work with.
-- **Selected work** — project cards with search and filtering.
+- **Personal introduction** — background, interests, and current focus.
+- **Skills & tools** — a growing toolkit for designing and building digital products.
+- **Selected projects** — searchable, filterable project cards.
 - **Education & experience** — a timeline of my journey so far.
-- **Contact** — a form and social links for getting in touch.
-- **Accessible, responsive design** — responsive layouts, keyboard-friendly navigation, and light/dark theme controls.
+- **Contact & social links** — ways to connect and discuss opportunities.
+- **Responsive and accessible details** — mobile-friendly layouts, skip navigation, keyboard focus styling, and a light/dark theme control.
 
-## Technology
+## Built with
 
-The site is built with standard web technologies and does not require a framework or package installation:
+The portfolio uses the browser’s native web platform, with no framework or package installation required:
 
 - HTML
 - CSS
@@ -53,21 +50,24 @@ The site is built with standard web technologies and does not require a framewor
 
 ## Run locally
 
-Clone the repository and open `index.html` in a browser. For a local web server, run:
+Clone the repository, then either open `index.html` directly in a browser or start a local server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000).
+Open [http://localhost:8000](http://localhost:8000) to view the portfolio.
 
-## Project files
+## Repository map
 
-- `index.html` — page structure and metadata.
-- `styles.css` and `redesign.css` — styling and responsive presentation.
-- `script.js` — portfolio content and interactive behavior.
-- `Tesfahun_Abebe_CV.pdf` — downloadable CV asset.
-- `.github/workflows/pages.yml` — GitHub Actions workflow for deploying the site to GitHub Pages.
+| File | Purpose |
+| --- | --- |
+| `index.html` | Page structure, metadata, and content sections |
+| `styles.css` | Core styles |
+| `redesign.css` | Visual refinements and responsive presentation |
+| `script.js` | Portfolio content and interactive behavior |
+| `Tesfahun_Abebe_CV.pdf` | CV document |
+| `.github/workflows/pages.yml` | GitHub Actions workflow for GitHub Pages deployment |
 
 ## Connect
 
@@ -82,6 +82,6 @@ Then visit [http://localhost:8000](http://localhost:8000).
 
 <div align="center">
 
-*Thanks for stopping by — feel free to explore, connect, or share an idea.*
+*Thanks for visiting — explore the projects, connect, or share an idea.*
 
 </div>
