@@ -8,13 +8,6 @@
     { label: "Contact", href: "#contact" }
   ];
 
-  const aboutFacts = [
-    ["Based in", "Injibara, Ethiopia"],
-    ["Current focus", "Web products & practical tools"],
-    ["Learning", "Software engineering & product thinking"],
-    ["Goal", "Build useful experiences for real people"]
-  ];
-
   const socialLinks = [
     { label: "GitHub", url: "https://github.com/AbelGit33", icon: "GH" },
     { label: "YouTube", url: "https://www.youtube.com/@abel-k3", icon: "YT" },
@@ -22,62 +15,76 @@
     { label: "Telegram", url: "https://t.me/+251970862975", icon: "TG" }
   ];
 
-  const skillsByGroup = [
-    { title: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "Responsive UI", "Accessibility"] },
-    { title: "Backend & Tools", items: ["Node.js", "APIs", "Git & GitHub", "UI/UX Thinking", "Problem Solving"] },
-    { title: "Product & Learning", items: ["Wireframing", "Rapid prototyping", "User testing", "Product iteration", "Documentation"] }
+  const taglineText = "I build practical web experiences, learn fast, and turn ideas into useful digital products for real people.";
+  const roleText = "Software engineering student · Web developer · UI + product-minded problem solver";
+
+  const facts = [
+    ["Based in", "Injibara, Ethiopia"],
+    ["Current focus", "Software engineering and digital products"],
+    ["Learning", "Web development, UX, and product thinking"],
+    ["Goal", "Build useful tools that help people in everyday life"]
+  ];
+
+  const skills = [
+    { title: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "Responsive layouts", "Accessibility"] },
+    { title: "Product building", items: ["Wireframing", "User-focused design", "Prototyping", "Testing", "Iteration"] },
+    { title: "Tools & workflow", items: ["Git & GitHub", "APIs", "Problem solving", "Documentation", "Rapid learning"] }
   ];
 
   const projectData = [
     {
-      name: "Department Selection Guide",
+      title: "Department Selection Guide",
       category: "AI / Education",
-      description: "A guide that helps students compare departments, understand options, and make better academic decisions.",
+      description: "A practical guide to help students compare departments and make better academic decisions with less confusion.",
       tags: ["AI", "EdTech", "UX", "Web"],
       link: "https://dept-selection-guide.vercel.app/",
-      featured: true 
+      featured: true
     },
     {
-      name: "EthioExamHub",
+      title: "EthioExamHub",
       category: "Telegram Bot",
-      description: "A practical exam-prep bot built to help students study and navigate important learning resources more efficiently.",
-      tags: ["Bots", "Learning", "Automation", "Telegram"],
+      description: "An exam-prep bot designed to make education support more accessible and actionable for students.",
+      tags: ["Bot", "Learning", "Automation", "Telegram"],
       link: "https://t.me/Entrance00_bot",
       featured: false
     },
     {
-      name: "Portfolio Website",
+      title: "Portfolio Website",
       category: "Personal Brand",
-      description: "A modern personal portfolio that showcases projects, background, and contact information in a clean editorial style.",
+      description: "A clear, modern portfolio for sharing my work, background, and available opportunities in a polished format.",
       tags: ["Portfolio", "Design", "Responsive", "Web"],
       link: "#home",
       featured: false
     },
     {
-      name: "Developer Toolkit",
+      title: "Developer Toolkit",
       category: "Productivity",
-      description: "Tools and workflows that help simplify routine tasks, reduce friction, and make ideas easier to turn into useful products.",
-      tags: ["Tools", "Process", "Productivity", "Web"],
+      description: "Small systems and workflows aimed at simplifying repetitive tasks and turning ideas into usable solutions.",
+      tags: ["Tools", "Productivity", "Workflow", "Web"],
       link: "#projects",
       featured: false
     }
   ];
 
-  const timelineEntries = [
-    { year: "2024 — Present", title: "Software Engineering Student", meta: "Injibara University", text: "Building projects, exploring modern web workflows, and learning how to turn ideas into practical digital experiences." },
-    { year: "2023", title: "Web Development Learning", meta: "Self-driven practice", text: "Focused on HTML, CSS, JavaScript, and product-oriented front-end work while building real examples and small tools." },
-    { year: "2022", title: "Problem-solving and digital projects", meta: "Independent exploration", text: "Started creating small solutions, experimenting with user-centered design, and understanding how software can make life easier." }
-  ];
-
-  const nowCard = `
-    <h3>Now</h3>
-    <p>Designing and building useful digital products, improving my frontend skills, and learning how to ship ideas that solve real problems.</p>
-  `;
-
-  const footerLinks = [
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" }
+  const timeline = [
+    {
+      year: "2024 — Present",
+      title: "Software Engineering Student",
+      meta: "Injibara University",
+      text: "Learning software engineering fundamentals while building digital products and improving my practical web skills."
+    },
+    {
+      year: "2023",
+      title: "Web Dev & Product Learning",
+      meta: "Self-directed study",
+      text: "Focused on front-end development, JavaScript, product thinking, and building useful interfaces from scratch."
+    },
+    {
+      year: "2022",
+      title: "Problem-solving & experimentation",
+      meta: "Independent projects",
+      text: "Started creating small web experiments, exploring UX, and learning how software can solve real problems."
+    }
   ];
 
   function renderNav() {
@@ -96,28 +103,39 @@
     `).join("");
   }
 
+  function renderHeroText() {
+    const tagline = document.getElementById("tagline");
+    const role = document.getElementById("role");
+    if (tagline) tagline.textContent = taglineText;
+    if (role) role.textContent = roleText;
+  }
+
   function renderAbout() {
     const aboutText = document.getElementById("aboutText");
-    if (!aboutText) return;
-    aboutText.innerHTML = `
-      <p>I’m Tesfahun Abebe, a software engineering student who enjoys turning ideas into useful digital experiences.</p>
-      <p>My work sits at the intersection of engineering, design, and practical problem-solving. I like building products that feel simple to use and genuinely helpful to people.</p>
-      <p>Right now, I’m focused on developing web experiences, experimenting with product ideas, and learning how to deliver polished solutions from concept to launch.</p>
-    `;
+    if (aboutText) {
+      aboutText.innerHTML = `
+        <p>I’m Tesfahun Abebe, a software engineering student who enjoys turning ideas into useful digital experiences.</p>
+        <p>I’m especially interested in building products that are simple, thoughtful, and genuinely helpful to people.</p>
+        <p>Right now, I’m learning by building — creating web interfaces, experimenting with product ideas, and improving the way I solve real-world problems with technology.</p>
+      `;
+    }
 
-    const facts = document.getElementById("facts");
-    if (facts) {
-      facts.innerHTML = aboutFacts.map(([label, value]) => `
+    const factsEl = document.getElementById("facts");
+    if (factsEl) {
+      factsEl.innerHTML = facts.map(([k, v]) => `
         <div>
-          <dt>${label}</dt>
-          <dd>${value}</dd>
+          <dt>${k}</dt>
+          <dd>${v}</dd>
         </div>
       `).join("");
     }
 
     const now = document.getElementById("now");
     if (now) {
-      now.innerHTML = nowCard;
+      now.innerHTML = `
+        <h3>Now</h3>
+        <p>Building web products, learning more about software engineering, and refining how I turn ideas into useful digital experiences.</p>
+      `;
     }
   }
 
@@ -130,7 +148,7 @@
 
     const grid = document.createElement("div");
     grid.className = "skg";
-    grid.innerHTML = skillsByGroup.map(group => `
+    grid.innerHTML = skills.map(group => `
       <div class="sk">
         <div class="skh">
           <span class="ski">✦</span>
@@ -143,78 +161,65 @@
     `).join("");
 
     const intro = section.querySelector(".section-intro");
-    if (intro) {
-      intro.insertAdjacentElement("afterend", grid);
-    } else {
-      section.appendChild(grid);
-    }
+    if (intro) intro.insertAdjacentElement("afterend", grid);
+    else section.appendChild(grid);
   }
 
   function renderProjects() {
     const tabsEl = document.getElementById("tabs");
     const gridEl = document.getElementById("grid");
+    const searchEl = document.getElementById("projectSearch");
+    const emptyEl = document.getElementById("projectEmpty");
+
     if (!tabsEl || !gridEl) return;
 
-    const filters = ["All", "AI", "Web", "Bots", "Productivity", "UX"];
+    const filters = ["All", "AI", "Web", "Bot", "Productivity", "UX"];
     tabsEl.innerHTML = filters.map((filter, index) => `
       <button class="tab${index === 0 ? " active" : ""}" type="button" aria-pressed="${index === 0}">${filter}</button>
     `).join("");
 
-    function buildCard(project) {
-      const actions = project.link && project.link !== "#projects" ? `
-        <div class="act">
-          <a class="btn p s" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noopener noreferrer">${project.featured ? "View project" : "Open"}</a>
+    const cards = projectData.map(project => `
+      <article class="card ${project.featured ? "feat" : ""}">
+        <div class="shot">
+          <span class="badge ${project.featured ? "f" : ""}">${project.featured ? "Featured · Live" : project.category}</span>
         </div>
-      ` : `<div class="act"><span class="btn p s disabled">Soon</span></div>`;
-
-      return `
-        <article class="card ${project.featured ? "feat" : ""}">
-          <div class="shot">
-            <span class="badge ${project.featured ? "f" : ""}">${project.featured ? "Featured · Live" : project.category}</span>
+        <div class="body">
+          <div class="meta">
+            <span class="eyebrow small">${project.category}</span>
+            <h3>${project.title}</h3>
           </div>
-          <div class="body">
-            <div class="meta">
-              <span class="eyebrow small">${project.category}</span>
-              <h3>${project.name}</h3>
-            </div>
-            <p>${project.description}</p>
-            <div class="tags">
-              ${project.tags.map(tag => `<span>${tag}</span>`).join("")}
-            </div>
-            ${actions}
+          <p>${project.description}</p>
+          <div class="tags">
+            ${project.tags.map(tag => `<span>${tag}</span>`).join("")}
           </div>
-        </article>
-      `;
-    }
+          <div class="act">
+            <a class="btn p s" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noopener noreferrer">${project.featured ? "Open live" : "View"}</a>
+          </div>
+        </div>
+      </article>
+    `).join("");
 
-    const allCards = projectData.map(buildCard).join("");
-    gridEl.innerHTML = allCards;
+    gridEl.innerHTML = cards;
 
     const buttons = [...tabsEl.querySelectorAll(".tab")];
-    const search = document.getElementById("projectSearch");
-    const empty = document.getElementById("projectEmpty");
 
-    function filterCards() {
-      const selected = tabsEl.querySelector(".tab[aria-pressed='true']")?.textContent.trim() || "All";
-      const query = (search?.value || "").toLowerCase().trim();
-
-      const cards = [...gridEl.querySelectorAll(".card")];
+    function updateGrid() {
+      const active = tabsEl.querySelector(".tab[aria-pressed='true']")?.textContent.trim() || "All";
+      const query = (searchEl?.value || "").trim().toLowerCase();
+      const cardsEls = [...gridEl.querySelectorAll(".card")];
       let visible = 0;
 
-      cards.forEach(card => {
-        const title = card.querySelector("h3")?.textContent.toLowerCase() || "";
+      cardsEls.forEach(card => {
+        const title = (card.querySelector("h3")?.textContent || "").toLowerCase();
         const text = card.textContent.toLowerCase();
-        const category = card.querySelector(".eyebrow")?.textContent.toLowerCase() || "";
-        const matchesFilter = selected === "All" || category.includes(selected.toLowerCase()) || text.includes(selected.toLowerCase());
+        const matchesFilter = active === "All" || text.toLowerCase().includes(active.toLowerCase());
         const matchesSearch = !query || title.includes(query) || text.includes(query);
-        const shouldShow = matchesFilter && matchesSearch;
-        card.style.display = shouldShow ? "" : "none";
-        if (shouldShow) visible += 1;
+        const show = matchesFilter && matchesSearch;
+        card.style.display = show ? "" : "none";
+        if (show) visible++;
       });
 
-      if (empty) {
-        empty.hidden = visible !== 0;
-      }
+      if (emptyEl) emptyEl.hidden = visible !== 0;
     }
 
     buttons.forEach(button => {
@@ -224,99 +229,98 @@
           btn.setAttribute("aria-pressed", String(pressed));
           btn.classList.toggle("active", pressed);
         });
-        filterCards();
+        updateGrid();
       });
     });
 
-    if (search) {
-      search.addEventListener("input", filterCards);
+    if (searchEl) {
+      searchEl.addEventListener("input", updateGrid);
     }
 
-    filterCards();
+    updateGrid();
   }
 
   function renderTimeline() {
-    const timeline = document.getElementById("timeline");
-    if (!timeline) return;
-    timeline.innerHTML = timelineEntries.map(entry => `
+    const timelineEl = document.getElementById("timeline");
+    if (!timelineEl) return;
+    timelineEl.innerHTML = timeline.map(item => `
       <li>
-        <div class="when">${entry.year}</div>
+        <div class="when">${item.year}</div>
         <div class="info">
-          <h3>${entry.title}</h3>
-          <p class="meta">${entry.meta}</p>
-          <p>${entry.text}</p>
+          <h3>${item.title}</h3>
+          <p class="meta">${item.meta}</p>
+          <p>${item.text}</p>
         </div>
       </li>
     `).join("");
 
-    const cert = document.querySelector(".cert-heading");
-    if (cert) {
-      const parent = cert.parentElement;
+    const certHeading = document.querySelector(".cert-heading");
+    if (certHeading) {
       const certCard = document.createElement("div");
       certCard.className = "cert";
       certCard.innerHTML = `
         <div class="meta">
           <span class="eyebrow">Certification</span>
-          <h3>Web Development & Product Thinking</h3>
+          <h3>Web Development & product thinking</h3>
         </div>
-        <p>Continuous self-learning in modern web technologies, UI craft, and effective digital product building.</p>
+        <p>Continuous self-learning in modern web technologies, user-centered design, and building useful digital products.</p>
       `;
-      cert.insertAdjacentElement("afterend", certCard);
+      certHeading.insertAdjacentElement("afterend", certCard);
     }
   }
 
   function renderFooter() {
-    const year = new Date().getFullYear();
     const copy = document.getElementById("copy");
-    if (copy) {
-      copy.textContent = `© ${year} Tesfahun Abebe`;
-    }
+    if (copy) copy.textContent = `© ${new Date().getFullYear()} Tesfahun Abebe`;
 
     const footlinks = document.getElementById("footlinks");
     if (footlinks) {
-      footlinks.innerHTML = footerLinks.map(link => `
-        <li><a href="${link.href}">${link.label}</a></li>
-      `).join("");
+      footlinks.innerHTML = [
+        { label: "About", href: "#about" },
+        { label: "Projects", href: "#projects" },
+        { label: "Contact", href: "#contact" }
+      ].map(item => `<li><a href="${item.href}">${item.label}</a></li>`).join("");
     }
   }
 
-  function initTheme() {
-    const themeButton = document.getElementById("theme");
+  function initThemeToggle() {
     const root = document.documentElement;
+    const toggle = document.getElementById("theme");
+    const saved = localStorage.getItem("portfolio-theme");
 
-    const savedTheme = localStorage.getItem("portfolio-theme");
-    if (savedTheme === "dark") {
+    if (saved === "dark") {
       root.setAttribute("data-theme", "dark");
-      if (themeButton) themeButton.textContent = "☀";
+      if (toggle) toggle.textContent = "☀";
     }
 
-    if (themeButton) {
-      themeButton.addEventListener("click", () => {
+    if (toggle) {
+      toggle.addEventListener("click", () => {
         const dark = root.getAttribute("data-theme") === "dark";
-        const next = dark ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-        localStorage.setItem("portfolio-theme", next);
-        themeButton.textContent = next === "dark" ? "☀" : "☾";
+        const value = dark ? "light" : "dark";
+        root.setAttribute("data-theme", value);
+        localStorage.setItem("portfolio-theme", value);
+        toggle.textContent = value === "dark" ? "☀" : "☾";
       });
     }
   }
 
   function initMenu() {
-    const menuButton = document.getElementById("menu");
+    const menu = document.getElementById("menu");
     const nav = document.getElementById("nav");
-    if (!menuButton || !nav) return;
+    if (!menu || !nav) return;
 
-    const toggle = () => {
-      const expanded = menuButton.getAttribute("aria-expanded") === "true";
-      menuButton.setAttribute("aria-expanded", String(!expanded));
+    menu.addEventListener("click", () => {
+      const expanded = menu.getAttribute("aria-expanded") === "true";
+      menu.setAttribute("aria-expanded", String(!expanded));
       nav.classList.toggle("open", !expanded);
-    };
+    });
 
-    menuButton.addEventListener("click", toggle);
-    nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-    }));
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        menu.setAttribute("aria-expanded", "false");
+      });
+    });
   }
 
   function initReadingProgress() {
@@ -327,11 +331,11 @@
     if (!fill) return;
 
     const update = () => {
-      const scrollTop = window.scrollY;
       const total = document.body.scrollHeight - window.innerHeight;
-      const value = total > 0 ? (scrollTop / total) * 100 : 0;
-      progress.setAttribute("aria-valuenow", String(Math.min(100, Math.max(0, value))));
-      fill.style.width = `${Math.min(100, Math.max(0, value))}%`;
+      const value = total > 0 ? (window.scrollY / total) * 100 : 0;
+      const clamped = Math.min(100, Math.max(0, value));
+      progress.setAttribute("aria-valuenow", String(clamped));
+      fill.style.width = `${clamped}%`;
     };
 
     update();
@@ -339,8 +343,7 @@
   }
 
   function initCvLinks() {
-    const cvLinks = document.querySelectorAll("#cv, #cv2");
-    cvLinks.forEach(link => {
+    document.querySelectorAll("#cv, #cv2").forEach(link => {
       link.href = "Tesfahun_Abebe_CV.pdf";
       link.removeAttribute("hidden");
     });
@@ -350,29 +353,25 @@
     const form = document.getElementById("form");
     if (!form) return;
 
-    const nameInput = document.getElementById("fn");
-    const emailInput = document.getElementById("fe");
-    const messageInput = document.getElementById("fm");
-
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
-      const name = nameInput?.value.trim() || "";
-      const email = emailInput?.value.trim() || "";
-      const message = messageInput?.value.trim() || "";
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const name = document.getElementById("fn")?.value.trim() || "";
+      const email = document.getElementById("fe")?.value.trim() || "";
+      const message = document.getElementById("fm")?.value.trim() || "";
 
       if (!name || !email || !message) {
         alert("Please fill in your name, email, and message.");
         return;
       }
 
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailPattern.test(email)) {
         alert("Please enter a valid email address.");
         return;
       }
 
-      const subject = encodeURIComponent("Portfolio inquiry from " + name);
+      const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
       window.location.href = `mailto:t3267270@gmail.com?subject=${subject}&body=${body}`;
       form.reset();
@@ -381,12 +380,13 @@
 
   renderNav();
   renderSocial();
+  renderHeroText();
   renderAbout();
   renderSkills();
   renderProjects();
   renderTimeline();
   renderFooter();
-  initTheme();
+  initThemeToggle();
   initMenu();
   initReadingProgress();
   initCvLinks();
