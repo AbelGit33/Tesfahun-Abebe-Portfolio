@@ -7,6 +7,7 @@
 **Building useful things for a better-connected world.**
 
 [![Explore the portfolio](https://img.shields.io/badge/Explore%20the%20Portfolio-147d58?style=for-the-badge)](https://tesfahunabebe-portfolio.vercel.app)
+[![Open Teaching Stack](https://img.shields.io/badge/Teaching%20Stack-147d58?style=for-the-badge)](https://teaching-stack.vercel.app/)
 [![Open the Department Selection Guide](https://img.shields.io/badge/🎓%20Department%20Selection%20Guide-0f766e?style=for-the-badge)](https://dept-selection-guide.vercel.app/)
 
 [About](#about) · [Featured project](#featured-project) · [Portfolio highlights](#portfolio-highlights) · [Run locally](#run-locally) · [Connect](#connect)
@@ -23,13 +24,17 @@ This repository is my personal portfolio: a responsive, single-page website intr
 
 ## Featured project
 
+### Teaching Stack
+
+Explore the live Teaching Stack app:
+
+**[Open Teaching Stack](https://teaching-stack.vercel.app/)**
+
 ### Department Selection Guide
 
 Explore the Department Selection Guide using the button above or this direct link:
 
 **[🎓 Open the Department Selection Guide](https://dept-selection-guide.vercel.app/)**
-
-> **Availability:** I checked the supplied URL while preparing this README. It appeared to lead to a Vercel login page rather than a publicly accessible guide. The link is included as requested; if visitors cannot open it, check the Vercel deployment’s access protection and status.
 
 ## Portfolio highlights
 
@@ -66,6 +71,7 @@ Open [http://localhost:8000](http://localhost:8000) to view the portfolio.
 | `styles.css` | Core styles |
 | `redesign.css` | Visual refinements and responsive presentation |
 | `script.js` | Portfolio content and interactive behavior |
+| `assets/` | Custom favicon, hero illustration, and project artwork |
 | `Tesfahun_Abebe_CV.pdf` | CV document |
 | `.github/workflows/pages.yml` | GitHub Actions workflow for GitHub Pages deployment |
 

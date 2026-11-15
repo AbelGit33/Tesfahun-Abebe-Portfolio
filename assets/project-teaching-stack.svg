@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="66" y1="50" x2="879" y2="497" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4F4E9"/>
+      <stop offset="1" stop-color="#DDEAF6"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h960v540H0z"/>
+  <circle cx="778" cy="109" r="142" fill="#65C99B" fill-opacity=".16"/>
+  <rect x="94" y="70" width="772" height="397" rx="28" fill="#fff" fill-opacity=".88"/>
+  <rect x="130" y="108" width="347" height="319" rx="22" fill="#173E30"/>
+  <rect x="160" y="139" width="287" height="19" rx="9.5" fill="#8ED6AD"/>
+  <text x="160" y="206" fill="#fff" font-family="Arial,sans-serif" font-size="33" font-weight="700">Teach with</text>
+  <text x="160" y="247" fill="#EFB536" font-family="Arial,sans-serif" font-size="33" font-weight="700">confidence.</text>
+  <text x="160" y="286" fill="#D9EADF" font-family="Arial,sans-serif" font-size="15">Simple tools for a richer</text>
+  <text x="160" y="309" fill="#D9EADF" font-family="Arial,sans-serif" font-size="15">teaching and learning journey.</text>
+  <rect x="160" y="350" width="147" height="45" rx="22.5" fill="#65C99B"/>
+  <text x="183" y="378" fill="#10291F" font-family="Arial,sans-serif" font-size="14" font-weight="700">GET STARTED</text>
+  <rect x="510" y="108" width="320" height="319" rx="22" fill="#F5F8F5"/>
+  <path d="M570 192c0-27 21-48 48-48h93c27 0 48 21 48 48v171H618c-27 0-48-21-48-48V192Z" fill="#E3F3E9"/>
+  <path d="M570 192c0-27 21-48 48-48h37v171c0-27-21-48-48-48h-37V192Z" fill="#147D58"/>
+  <path d="M703 144h8c27 0 48 21 48 48v123c0-27-21-48-48-48h-8V144Z" fill="#EFB536"/>
+  <path d="M591 189h43m-43 23h43m-43 23h30" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M635 380h110" stroke="#CBD8CF" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="783" cy="137" r="18" fill="#EFBD4A"/>
+  <path d="m776 137 5 5 10-11" stroke="#173E30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="516" cy="392" r="12" fill="#E88472"/>
+  <circle cx="820" cy="397" r="8" fill="#147D58" fill-opacity=".5"/>
+</svg>
