@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="68" y1="31" x2="894" y2="511" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3F3E9"/>
+      <stop offset="1" stop-color="#E9E6F4"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h960v540H0z"/>
+  <circle cx="818" cy="82" r="121" fill="#EFB536" fill-opacity=".23"/>
+  <circle cx="113" cy="469" r="119" fill="#147D58" fill-opacity=".1"/>
+  <rect x="93" y="65" width="774" height="410" rx="28" fill="#fff" fill-opacity=".92"/>
+  <rect x="93" y="65" width="774" height="61" rx="28" fill="#173E30"/>
+  <path d="M93 96h774v30H93z" fill="#173E30"/>
+  <circle cx="129" cy="96" r="7" fill="#F07872"/>
+  <circle cx="154" cy="96" r="7" fill="#EFB536"/>
+  <circle cx="179" cy="96" r="7" fill="#65C99B"/>
+  <text x="224" y="102" fill="#D9EADF" font-family="Arial,sans-serif" font-size="15">developer-toolkit</text>
+  <rect x="127" y="155" width="431" height="274" rx="18" fill="#10291F"/>
+  <path d="m172 207 22 18-22 18m56-36-22 36" stroke="#EFB536" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="264" y="206" width="226" height="9" rx="4.5" fill="#8ED6AD"/>
+  <rect x="264" y="227" width="181" height="8" rx="4" fill="#D9EADF" fill-opacity=".55"/>
+  <rect x="171" y="273" width="112" height="8" rx="4" fill="#65C99B"/>
+  <rect x="300" y="273" width="194" height="8" rx="4" fill="#D9EADF" fill-opacity=".45"/>
+  <rect x="171" y="299" width="195" height="8" rx="4" fill="#D9EADF" fill-opacity=".6"/>
+  <rect x="386" y="299" width="107" height="8" rx="4" fill="#EFB536"/>
+  <rect x="171" y="325" width="68" height="8" rx="4" fill="#D9EADF" fill-opacity=".4"/>
+  <rect x="260" y="325" width="234" height="8" rx="4" fill="#65C99B"/>
+  <rect x="171" y="351" width="153" height="8" rx="4" fill="#EFB536"/>
+  <rect x="343" y="351" width="150" height="8" rx="4" fill="#D9EADF" fill-opacity=".45"/>
+  <rect x="171" y="385" width="323" height="1" fill="#FFFFFF" fill-opacity=".16"/>
+  <circle cx="193" cy="405" r="5" fill="#65C99B"/>
+  <rect x="212" y="401" width="138" height="8" rx="4" fill="#D9EADF" fill-opacity=".55"/>
+  <rect x="583" y="155" width="249" height="124" rx="18" fill="#F4F8F4"/>
+  <circle cx="625" cy="197" r="21" fill="#E3F3E9"/>
+  <path d="m615 197 8 8 14-17" stroke="#147D58" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="662" y="193" fill="#173E30" font-family="Arial,sans-serif" font-size="16" font-weight="700">Build &amp; verify</text>
+  <text x="662" y="217" fill="#68756B" font-family="Arial,sans-serif" font-size="12">Small steps, useful results.</text>
+  <rect x="583" y="298" width="249" height="131" rx="18" fill="#F4F8F4"/>
+  <text x="609" y="331" fill="#68756B" font-family="Arial,sans-serif" font-size="12">QUICK ACTIONS</text>
+  <rect x="609" y="348" width="196" height="28" rx="8" fill="#E3F3E9"/>
+  <path d="M623 362h12m-6-6v12" stroke="#147D58" stroke-width="3" stroke-linecap="round"/>
+  <rect x="645" y="358" width="105" height="7" rx="3.5" fill="#147D58"/>
+  <rect x="609" y="386" width="196" height="28" rx="8" fill="#F8EBCB"/>
+  <path d="M625 394v12m-6-6h12" stroke="#B77A1D" stroke-width="3" stroke-linecap="round"/>
+  <rect x="645" y="396" width="91" height="7" rx="3.5" fill="#A87921"/>
+</svg>

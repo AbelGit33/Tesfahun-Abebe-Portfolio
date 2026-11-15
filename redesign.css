@@ -15,3 +15,37 @@ header{background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:b
 @media(max-width:800px){.hero .wrap{grid-template-columns:1fr}.hero-copy{max-width:680px}.hero-visual{min-height:430px;max-width:560px;width:100%;justify-self:center}.photo{width:min(65%,320px)}.about{grid-template-columns:1fr}.about-aside{max-width:600px}.ct{grid-template-columns:1fr;gap:25px}.contact-aside{padding-top:5px}}
 @media(max-width:560px){.wrap{padding-inline:20px}section{padding:74px 0}.bar{height:66px;gap:7px}.logo{font-size:1.14rem}.logo i{width:33px;height:33px}#menu{display:inline-flex}header #nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);display:none}header #nav.open{display:block}header #nav ul{flex-direction:column;padding:10px 20px 16px}.cv{display:none}.hero{padding:65px 0 75px}.hero .wrap{gap:20px}h1{font-size:clamp(3rem,15vw,4.7rem)}.hero-visual{min-height:370px}.float-card{right:0;bottom:12%}.visual-caption{left:0;bottom:2%}.about-aside{padding:20px}.project-tools{align-items:stretch;flex-direction:column}.project-count{min-height:1.5em}.card.feat{flex-direction:column}.card.feat .shot{min-height:0;aspect-ratio:16/9}.contact-note{padding:23px}footer .wrap{justify-content:center;text-align:center}footer nav ul{justify-content:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Portfolio identity and contact refinements */
+:root{--bg:#f7f8f4;--surface:#fff;--ink:#19251d;--muted:#68756b;--line:#e1e7df;--accent:#147d58;--accent-ink:#fff;--gold:#efb536;--red:#b3413a}
+:root[data-theme=dark]{--bg:#111a16;--surface:#19231e;--ink:#f1f5f0;--muted:#a8b7ac;--line:#303e35;--accent:#65c99b;--accent-ink:#102219;--gold:#efc66c;--red:#f07872}
+#contact{background:#10291f}
+#contact .eyebrow,#contact .contact-spark,#contact .links a:hover span:last-child{color:#8ed6ad}
+#contact input:focus,#contact textarea:focus{border-color:#8ed6ad;outline-color:#8ed6ad30}
+#contact .btn.p{background:#65c99b;border-color:#65c99b;color:#102219}
+#contact .ok{padding:12px 14px;border:1px solid #8ed6ad45;border-radius:12px}
+#contact .err:not(:empty){display:block;margin-top:5px;font-size:.8rem}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#ef8c81!important}
+.links li{background:transparent}
+.links a span:last-child{font-size:.86rem}
+.card .act .btn{max-width:100%;text-align:center}
+.card.feat .act .btn{white-space:normal}
+@media(max-width:560px){.card .act .btn{width:100%}}
+.icon-svg{display:block;width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.soc a svg,.links .contact-link-label svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.soc a svg .icon-fill{fill:currentColor;stroke:none}
+.soc a{transition:transform .18s ease,background .18s ease,color .18s ease}
+.soc a:hover{transform:translateY(-3px)}
+.hero .photo{padding:0;background:transparent}
+.photo img{width:100%;height:100%;object-fit:contain}
+.card .shot{aspect-ratio:16/9;min-height:0;padding:0;overflow:hidden}
+.card .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.card:hover .shot img{transform:scale(1.035)}
+.card .shot .badge{position:relative;z-index:1;margin:13px}
+.card.feat{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}
+.card.feat .shot{height:100%;aspect-ratio:auto;border-right:1px solid var(--line)}
+.card.feat .body{padding:clamp(22px,4vw,44px)}
+.links .contact-link-label{display:inline-flex!important;align-items:center;gap:11px}
+.links .contact-link-label svg{flex:none;padding:3px;border-radius:7px;background:#ffffff12;color:#8ed6ad}
+@media(max-width:800px){.card.feat .shot{min-height:0}}
+@media(max-width:560px){.card.feat{display:flex}.card.feat .shot{height:auto;aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)}.card.feat .body{padding:20px}}
