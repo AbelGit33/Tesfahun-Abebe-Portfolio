@@ -87,7 +87,7 @@
         "A practical guide to help students compare departments and make better academic decisions with less confusion.",
       tags: ["AI", "EdTech", "UX", "Web"],
       tagIcons: ["✦", "◎", "▣", "◈"],
-      image: "assets/DeptSelectionGuideAiBased.png",
+      image: "assets/project-department-guide.svg",
       imageAlt:
         "Illustrated department selection dashboard with interest prompts and guided academic choices",
       link: "https://dept-selection-guide.vercel.app/",
